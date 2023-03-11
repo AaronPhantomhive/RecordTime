@@ -11,8 +11,4 @@ export class MainComponent {
 
   showFiller = false;
 
-  // constructor(public router: Router, public activeRoute: ActivatedRoute) { }
-  testButton() {
-    console.log("testButtontestButtontestButtontestButtontestButtontestButton");
-  }
 }

@@ -10,6 +10,7 @@ import {MatTooltipModule} from "@angular/material/tooltip";
 import {RouterOutlet} from "@angular/router";
 import { MainComponent } from './app-features/main/main.component';
 import {AppRoutingModule} from "./app-routing.module";
+import {MatCardModule} from "@angular/material/card";
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {AppRoutingModule} from "./app-routing.module";
     MatIconModule,
     MatTooltipModule,
     AppRoutingModule,
-    RouterOutlet
+    RouterOutlet,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,29 @@
+:host {
+  display: flex;
+  height: 800px;
+  justify-content: center;
+  align-items: center;
+}
+
+.outline {
+  /*align-items: center;*/
+  /*background: #333333;*/
+}
+
+.card {
+  height: 300px;
+  width: 500px;
+  background: #f7f7f7;
+  margin: 8px;
+}
+
+.card-content {
+
+
+}
+
+.record-button {
+  margin: 8px;
+  display: flex;
+  justify-content: space-around;
+}
