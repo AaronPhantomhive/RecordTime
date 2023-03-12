@@ -11,12 +11,17 @@ import {RouterOutlet} from "@angular/router";
 import { MainComponent } from './app-features/main/main.component';
 import {AppRoutingModule} from "./app-routing.module";
 import {MatCardModule} from "@angular/material/card";
+import { FocusColorDirective } from './app-common/directives/pattern/focus-color.directive';
+import {MatInputModule} from "@angular/material/input";
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
     AppComponent,
     RecordTimeComponent,
-    MainComponent
+    MainComponent,
+    FocusColorDirective
   ],
   imports: [
     BrowserModule,
@@ -26,7 +31,10 @@ import {MatCardModule} from "@angular/material/card";
     MatTooltipModule,
     AppRoutingModule,
     RouterOutlet,
-    MatCardModule
+    MatCardModule,
+    MatInputModule,
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
