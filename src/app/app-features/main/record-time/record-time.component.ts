@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-record-time',
@@ -8,7 +8,9 @@ import {Component, OnInit} from '@angular/core';
 export class RecordTimeComponent implements OnInit {
   currentTime: Date = new Date();
 
-  recordTimeInfos: RecordTimeInfo[] = [];
+  @Input() recordTimeInfos: RecordTimeInfo[] = [];
+
+  @Output() recordTimeInfosChange = new EventEmitter<RecordTimeInfo[]>();
 
   ngOnInit(): void {
     this.RunningTime();
