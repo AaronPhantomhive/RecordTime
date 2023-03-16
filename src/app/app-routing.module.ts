@@ -5,13 +5,13 @@ import {MainComponent} from "./app-features/main/main.component";
 import {BrowserModule} from "@angular/platform-browser";
 
 const routes: Routes = [
+  // {
+  //   path: '',
+  //   redirectTo: '/home',
+  //   pathMatch: "full"
+  // },
   {
     path: '',
-    redirectTo: '/home',
-    pathMatch: "full"
-  },
-  {
-    path: 'home',
     component: MainComponent
   },
   {
