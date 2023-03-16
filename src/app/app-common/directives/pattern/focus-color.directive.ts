@@ -7,13 +7,13 @@ export class FocusColorDirective {
 
   constructor(private elRef: ElementRef) {}
 
-  @HostListener('mouseover')
-  onMouseOver(): void {
+  @HostListener('mouseenter')
+  onMouseEnter(): void {
     this.elRef.nativeElement.style.backgroundColor = '#dcdcdc';
   }
 
-  @HostListener('mouseout')
-  onMouseOut(): void {
+  @HostListener('mouseleave')
+  onMouseLeave(): void {
     this.elRef.nativeElement.style.backgroundColor = '#f7f7f7';
   }
 
